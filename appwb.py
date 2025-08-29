@@ -26,7 +26,7 @@ def clean_age(age):
 
 # Load the trained model
 try:
-    model = joblib.load("linearwb.joblib")
+    model = joblib.load("randomforestwb.joblib")
 except FileNotFoundError:
     st.error("Model file 'linearwb.joblib' not found. Please ensure the model is trained and saved.")
     st.stop() # Stop the app if the model file is not found
